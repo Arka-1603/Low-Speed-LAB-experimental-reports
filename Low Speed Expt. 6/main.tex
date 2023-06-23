@@ -1,0 +1,266 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{secdot}
+\usepackage{multirow}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+
+\title{{Experiment - 6\\ \textbf{Drag estimation on cylinder from wake profile measurent}}}
+\author{Arka Pramanick, AE21B007\\ Department of Aerospace Engineering\\ IIT Madras\\[3ex] Instructor:\\ \large Professor Dr. R. Sriram}
+
+\date{14 March, 2023}
+
+
+\begin{document}
+\maketitle
+
+\hline
+
+\section{Aim :}
+\begin{itemize}
+    \item To estimate Drag from wake velocity profile measurement.
+    \item To check relation between Coefficients of Drag and Reynolds no.
+\end{itemize}
+
+
+\section{Apparatus :}
+Required apparatus for performing this experiment are:
+\begin{itemize}
+    \item Manometer
+    \item C15-10 Armfield tunnel
+    \item Pitot-static Probe
+    \item Fan
+    \item Cylinder model
+\end{itemize}
+
+
+
+\newpage
+\section{Theory :}
+
+\underline{\textbf{Drag}} : Drag is the force which opposes the motion of an object.
+Drag is calculated by : \\
+$$D = \int_{-\infty}^{\infty} \rho v (V_{\infty}-v)\,dy $$
+\underline{\textbf{Coefficients of Drag }} :
+Drag coefficients caused due to skin friction and Drag. Drag coefficients is calculated by :
+$$ C_d = \frac{D}{(\rho V_{\infty}^2 d)/2} $$ \\
+\underline{\textbf{Stagnation and Static Pressure :}}
+Stagnation pressure is the pressure at the stagnation points in the fluid flow.Static pressure is the actual thermodynamic pressure of a flow.
+$$  P_{stag} = P_{\infty} + \frac{\rho v^2}{2} $$
+\underline{\textbf{Reynolds Number :}}
+The Reynolds number is the ratio of inertial forces to viscous forces within a fluid which is subjected to relative internal moment due to variation of velocities.
+$$  R_e = \frac{\rho V_{\infty d}}{\mu} $$
+
+
+
+
+
+
+\section{Procedure :}
+\begin{enumerate}
+    \item In wind tunnel test section is set.
+    \item Pitot-static probe is connected to manometer.
+    \item Fan speed is fixed.
+    \item Required readings are taken.
+\end{enumerate}
+
+
+
+
+
+
+\section{Observation :}
+
+
+\subsection{Wake velocity profile with Y distance of Pitot  probe  }
+\begin{table}[ht]
+\centering
+\caption{\textbf{Wake profile velocity with y distance of pitot probe}}
+\vspace{2mm}
+\begin{flushleft}
+\begin{tabular}{|c|c|c|c|c|} 
+ \hline
+Port No. & Distance from starting point(in mm) & Stagnation Pressure(in mm of water) & Velocity(m/s) \\ [0.1ex] 
+ \hline
+$P_1$ & 0 & -1.1  & 8.854 \\ 
+ \hline
+$P_2$ & 6 & -1.4 & 8.579  \\
+ \hline
+$P_3$ & 12 & -2.1 & 7.899  \\
+ \hline
+ $P_4$ & 18 & -1.8 & 7.155  \\
+ \hline
+$P_5$ & 24 & -3.1 & 6.812  \\
+ \hline
+$P_6$ & 30 & -3.4 & 6.450 \\ 
+ \hline
+$P_7$ & 36 & -2.6 & 7.376 \\ 
+ \hline
+$P_8$ & 42 & -2.5 & 7.483\\
+ \hline
+$P_9$ & 48 & -1.7 & 8.295\\
+ \hline
+$P_{10}$ & 54 & -1.1 & 8.854\\ 
+ \hline 
+
+\end{tabular}
+\end{flushleft}
+\end{table}
+
+\begin{figure}[!ht]
+	\begin{center}
+		\framebox{
+			\includegraphics[scale=0.4]{velocity exp 6.png}
+		}
+	\end{center}
+	\caption{Variation of velocity with y distance of pitot tube.}
+\end{figure}
+
+
+
+\newpage
+
+
+
+
+
+
+
+
+
+\newpage
+
+\textbf{Drag vs Velocity : } 
+
+
+
+\begin{table}[ht]
+\centering
+\caption{\textbf{Variation of Drag Coefficients with Reynolds No}}
+\vspace{2mm}
+
+\begin{tabular}{|c|c|c|c|c|} 
+ \hline
+Sl. No. & Velocity & Drag & Coeff of Drag($C_d$) & Reynolds No.($R_e$) \\ [0.1ex] 
+ \hline \hline
+1 & 8 & 1.225 & 1.046 & 16109.98   \\ 
+ \hline
+2 & 10.2 & 1.3817 & 0.723 & 20709.94  \\
+ \hline
+3 & 12 & 1.458 & 0.553 & 12413.13   \\
+ \hline
+4 & 14.2 & 1.76 & 0.480 & 28595.21   \\
+ \hline
+5 & 16 & 2.23 & 0.476 & 32219.95  \\
+ \hline
+6 & 18 & 3.18 & 0.536 & 36247.44 \\ 
+ \hline
+
+
+\end{tabular}
+\end{table}
+
+
+\begin{figure}[!ht]
+	\begin{center}
+		\framebox{
+			\includegraphics[scale=0.6]{expt 6.jpg}
+		}
+	\end{center}
+	\caption{Variation of Coefficients of Drag with Reynolds No.}
+\end{figure}
+
+\newpage
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{Calculations :}
+Density of air = 1.225 $m^3$ \\
+Zero error = -0.4 mm of Water \\
+Static Pressure($P_{\infty}$ = -(6-0.4) mm of Water = -5.6 mm of water \\
+Density of Water($\rho_{w}$) = 1000 $Kg/m^3$
+
+\subsection{Calculation of wake profile velocity :}
+For port 1 : \\
+Stagnation Pressure($P_{stag}$) = -(1.5-0.4) mm of Water = -1.1 mm of Water
+
+$$  P_{stag} = P_{\infty} + \frac{\rho v^2}{2} $$
+$$\Rightarrow   P_{stag}-P_{\infty} = \frac{\rho v^2}{2}$$ 
+$$\Rightarrow \rho_{w}gh = \frac{\rho v^2}{2} $$
+$$\Rightarrow v= \sqrt{\frac{1000\times9.8\times(5.6-1.1)\times 10^{-3} \times2}{1.225}} $$
+$$\Rightarrow v = 8.854 m/s $$
+
+
+
+
+
+\subsection{Calculation of Drag :}
+Drag(D) is calculated by , \\
+For 10 ports,\[ D = \int_{-\infty}^{\infty} \rho v (V_{\infty}-v)\,dy  \approx  \sum_{i=1}^{9} \rho v_{avg}(V_{\infty} - v_{avg})\Delta y \ \]
+Where, $v_{avg} = \frac{v_i + v_{i+1}}{2} $ \\
+$\Delta y = 6 mm = 0.006 m $ \\
+$V_{\infty}$ = 10.2 m/s $\\
+
+
+$$ D = \sum_{i=1}^{9} \rho v_{avg}(V_{\infty} - v_{avg})\Delta y $$\\
+$$\Rightarrow D =1.225 [\]\times 0.006  $$
+
+
+
+$$+(6.913\times3.287)+(7.4295\times2.7705)+(7.889\times2.311)+(8.5745\times1.6255) $$ \\ 
+
+
+
+$\therefore D = 1.3817 N \\
+
+
+
+\subsection{Calculation of Coefficients of Drag ($C_d$) and Reynolds number($R_e$):}
+Diameter(d) = 30 mm\\
+For velocity($V_{\infty}$ 10.2 m/s, \\
+
+$$ C_d = \frac{D}{(\rho V_{\infty}^2 d)/2} $$
+
+
+$$ \therefore C_d = 0.723 $$
+
+
+
+$$ R_e = \frac{\rho V_{\infty }d}{\mu} $$ \\
+Where $\mu = 1.81 \times 10^{-5} $
+$$ \therefore R_e = \frac{1.225\times 10.2 \times 0.03}{1.81\times10^{-5}} = 20709.94 $$
+
+
+\section{Sources of Error:}
+\begin{itemize}
+    \item Error due to instrumental defect.
+    \item Error may occur in taking readings before flow becomes steady.
+    \item Error due to environmental effect like temperature,pressure change.
+    \item Error in measurement due to presence of zero error in parameters.
+    \item Dimensional error may occurs 
+\end{itemize}
+
+
+
+\section{Conclusion :}
+\begin{itemize}
+    \item Wake velocity profile is symmetrical.
+    \item Drag increases on increasing velocity. 
+    \item Drag coefficient increases on increasing Reynolds number.
+\end{itemize}
+
+
+\end{document}
